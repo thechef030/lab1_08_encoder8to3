@@ -1,3 +1,25 @@
-# PDF의 보드 핀 표를 보고 PACKAGE_PIN과 IOSTANDARD를 직접 작성하세요.
-# get_ports 대상은 자신이 작성한 RTL 포트명과 일치해야 합니다.
-# 논리 시뮬레이션은 XDC의 실제 핀 배정을 검증하지 않습니다.
+# Derived from vendor archive; see legacy provenance.
+set_property PACKAGE_PIN L4 [get_ports {a[2]}]
+set_property PACKAGE_PIN M4 [get_ports {a[1]}]
+set_property PACKAGE_PIN M2 [get_ports {a[0]}]
+set_property PACKAGE_PIN K4 [get_ports {i[7]}]
+set_property PACKAGE_PIN N8 [get_ports {i[6]}]
+set_property PACKAGE_PIN N4 [get_ports {i[5]}]
+set_property PACKAGE_PIN N1 [get_ports {i[4]}]
+set_property PACKAGE_PIN P6 [get_ports {i[3]}]
+set_property PACKAGE_PIN N6 [get_ports {i[2]}]
+set_property PACKAGE_PIN L5 [get_ports {i[1]}]
+set_property PACKAGE_PIN J2 [get_ports {i[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {a[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {i[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {i[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {i[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {i[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {i[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {i[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {i[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {i[3]}]
+
+set_property DRIVE 12 [get_ports {a[0]}]
